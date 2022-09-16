@@ -12,8 +12,8 @@ function createSprite(seletor) {
     "frame9",
   ];
 
-  var current = 0;
-  var last = frames.length - 1;
+  let current = 0;
+  let last = frames.length - 1;
   $el.addClass(frames[current]);
 
   function moveFrame(from, to) {
@@ -40,8 +40,8 @@ function createSprite(seletor) {
   }
 
   return {
-    nextFrame: nextFrame,
-    reset: reset,
-    isFinished: isFinished,
+    nextFrame,
+    reset,
+    isFinished,
   };
 }
